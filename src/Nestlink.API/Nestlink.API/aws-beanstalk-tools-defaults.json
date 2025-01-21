@@ -1,0 +1,20 @@
+
+{
+    "region" : "ca-central-1",
+    "configuration" : "Release",
+    "framework"     : "net8.0",
+    "self-contained" : true,
+    "application"    : "NestlinkAPI",
+    "environment"    : "NestlinkAPI-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-02ac50ae10cbc1d92\";\"aws:ec2:vpc,Subnets\"=\"subnet-081ce175468e35b57\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.8.6 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "nestlinkapi-dev",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "beanstalk",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "none"
+}
